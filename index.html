@@ -701,11 +701,12 @@ License: You must have a valid license purchased only from themeforest(the above
                 <span class="logo__text text-white text-lg ml-3"> Wattbrain </span>
             </a>
             <!-- END: Logo -->
-            <div class="-intro-x hidden md:flex xl:w-[300px] block">
-                <span class="text-white text-white text-lg logo__text mr-3">Nom du projet</span>
+            <div class="-intro-x hidden md:flex xl:flex xl:w-[300px] items-center">
+                <span class="text-white text-lg logo__text mr-3">Nom du projet</span>
                 <a class="flex items-center mr-3 text-white" href=""> <i data-lucide="check-square"
                         class="w-4 h-4 mr-1 text-white"></i> Edit
                 </a>
+                <span class="text-sm text-slate-400">| Variant</span>
             </div>
             <!-- BEGIN: Account Menu -->
             <div class="intro-x flex gap-2 align-center">
@@ -723,11 +724,14 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 
-                <div class="dropdown w-8 h-8">
-                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in scale-110"
+                <div class="dropdown">
+                    <div class="dropdown-toggle flex items-center cursor-pointer relative gap-3 zoom-in scale-110"
                         role="button" aria-expanded="false" data-tw-toggle="dropdown">
-                        <img alt="Midone - HTML Admin Template" src="dist/images/profile-5.jpg">
-
+                        <div class="w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit  ">
+                            <img alt="Midone - HTML Admin Template" src="dist/images/profile-5.jpg">
+                        </div>
+                            <span class="text-white">email@mail.com</span>
+                            <i data-lucide="chevron-down" class="text-white"></i>
                     </div>
                     <div class="dropdown-menu w-56">
                         <ul
