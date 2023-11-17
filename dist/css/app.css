@@ -13928,7 +13928,7 @@ html body {
   overflow-x: hidden;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
   padding-top: 8rem;
   display: flex;
   flex-direction: column;
@@ -13936,7 +13936,7 @@ html body {
   position: fixed;
   height: 100vh;
   background: rgb(var(--color-slate-200) / 1);
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 @media (max-width: calc(1280px - 1px)) {
@@ -16311,15 +16311,24 @@ html body {
 }
 
 .side-nav .results-box {
-
+  position: relative;
   width: 100%;
-  padding: 8.75rem 1rem 1.5rem 1rem;
+  padding: 7rem 1rem 1.5rem 1rem;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   gap: 1.5rem;
   border-radius: 0.625rem;
   background: linear-gradient(180deg, #285ED3 0%, #213C85 100%);
+}
+
+.side-nav .results-box img {
+  position: absolute;
+  top: -58%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .breadcrumb.breadcrumb-light {
