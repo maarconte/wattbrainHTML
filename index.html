@@ -763,7 +763,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="flex overflow-hidden">
         <!-- BEGIN: Side Menu -->
         <nav class="side-nav">
-            <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y mb-8">
+            <div class="col-span-12 hidden xl:block intro-y mb-8">
                 <div class="report-box zoom-in">
                     <div class="p-5 box">
                         <p class="mb-3">Avancement de la simulation</p>
@@ -782,6 +782,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                 </div>
             </div>
+
             <ul>
                 <li class="side-menu__list side-menu--pending">
                     <a href="javascript:;.html" class="side-menu side-menu--active  flex px-3">
@@ -852,7 +853,12 @@ License: You must have a valid license purchased only from themeforest(the above
                 </li>
 
             </ul>
-
+            <div class="results-box hidden xl:flex">
+                <img src="https://via.placeholder.com/262x240" />
+                <button class="btn btn-secondary">
+                    <i data-lucide="file-text"></i>
+                    Résultats</button>
+            </div>
         </nav>
         <!-- END: Side Menu -->
         <!-- BEGIN: Content -->

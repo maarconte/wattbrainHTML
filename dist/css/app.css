@@ -12567,11 +12567,24 @@ html body {
   background-color: rgb(var(--color-slate-100) / var(--tw-bg-opacity));
   padding-top: 5rem;
   padding-bottom: 2.5rem;
+
 }
 
 .dark .content {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--color-darkmode-700) / var(--tw-bg-opacity));
+}
+
+@media (max-width: 1279px) {
+  .content {
+    margin-left: 105px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content {
+    margin-left: 300px;
+  }
 }
 
 @media (max-width: calc(768px - 1px)) {
@@ -13909,7 +13922,7 @@ html body {
 }
 
 .side-nav {
-  width: 15vw;
+  width: 300px;
   z-index: 50;
   margin-top: -1rem;
   overflow-x: hidden;
@@ -13917,6 +13930,13 @@ html body {
   padding-right: 1.25rem;
   padding-bottom: 4rem;
   padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  height: 100vh;
+  background: rgb(var(--color-slate-200) / 1);
+  /* overflow: hidden; */
 }
 
 @media (max-width: calc(1280px - 1px)) {
@@ -16288,6 +16308,18 @@ html body {
 
 .dark .side-nav>ul>li>.side-menu.side-menu--active:after {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='80' viewBox='0 0 20 122.1'%3E%3Cpath data-name='Union 1' d='M16.038 122H16v-2.213a95.805 95.805 0 00-2.886-20.735 94.894 94.894 0 00-7.783-20.434A39.039 39.039 0 010 61.051a39.035 39.035 0 015.331-17.567 94.9 94.9 0 007.783-20.435A95.746 95.746 0 0016 2.314V0h4v122h-3.961v.1l-.001-.1z' fill='%23232e45'/%3E%3C/svg%3E");
+}
+
+.side-nav .results-box {
+
+  width: 100%;
+  padding: 8.75rem 1rem 1.5rem 1rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 0.625rem;
+  background: linear-gradient(180deg, #285ED3 0%, #213C85 100%);
 }
 
 .breadcrumb.breadcrumb-light {
