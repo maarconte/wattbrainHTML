@@ -2760,7 +2760,7 @@ select {
 }
 
 .input-group .input-group-text {
-  max-width: 25%;
+  width: max-content;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(var(--color-slate-200) / var(--tw-border-opacity));
@@ -2796,6 +2796,7 @@ select {
 
 .input-group>.input-group-text:first-child,
 .input-group>.form-control:first-child {
+  flex: 1;
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
 }
@@ -14115,6 +14116,10 @@ html body {
   animation-delay: calc(1 * 0.1s);
 }
 
+a.side-menu--active {
+  background-color: #fff;
+}
+
 .side-nav>ul>li:nth-child(1)>a:not(.side-menu--active) {
   opacity: 0;
   transform: translateX(50px);
@@ -16178,7 +16183,7 @@ html body {
   background-color: rgb(var(--color-darkmode-700) / var(--tw-bg-opacity));
 } */
 
-.side-nav>ul>li>.side-menu.side-menu--active:after {
+.side-menu.side-menu--active:after {
   content: "";
   width: 20px;
   height: 80px;
