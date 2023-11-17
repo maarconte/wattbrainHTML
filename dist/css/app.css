@@ -13909,7 +13909,7 @@ html body {
 }
 
 .side-nav {
-  width: 260px;
+  width: 15vw;
   z-index: 50;
   margin-top: -1rem;
   overflow-x: hidden;
