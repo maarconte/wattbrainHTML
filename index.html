@@ -1243,87 +1243,119 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                 </div>
                 <div class="col-span-12 xl:col-span-3 mt-5">
-                    <div class="flex flex-col">
-                        <div class="box p-5 mb-6 bg-primary intro-x">
-                            <div class="flex flex-wrap p-3">
-                                <div class="mr-auto">
-                                    <span class="text-white text-xl font-medium leading-5">Nom du projet</span>
-                                </div>
-                            </div>
-                        </div>
                         <div class="xl:min-h-0 intro-x">
-                            <div class="max-h-full ml:overflow-y-auto box p-5">
-                                <div class="mb-5 text-lg font-medium truncate">Résumé</div>
-                                <ul>
-                                    <li class="mb-3">
-                                        <div class="text-slat-500">Variante</div>
-                                        <div class="text-lg">Lorem Ipsum</div>
-                                    </li>
-                                    <li class="mb-3">
-                                        <div class="text-slat-500">Energie consommée</div>
-                                        <div class="text-lg">234 <span class="text-sm text-slate-500">MWh/an</span>
-                                        </div>
+                            <div class="max-h-full ml:overflow-y-auto box p-3">
 
-                                    </li>
-                                    <li class="mb-3">
-                                        <div class="text-slat-500">Capacité PV
-                                        </div>
-                                        <div class="text-lg">55%</div>
+                                <div class="mb-5">
+                                    <div class="mb-3 text-lg font-medium truncate">Résumé</div>
+                                    <ul
+                                    class="nav nav-pills border border-slate-300 dark:border-darkmode-300 border-dashed rounded-md mx-auto p-1  "
+                                          role="tablist">
+                                        <li class="nav-item flex-1" role="presentation">
+                                            <button
+                                            class="nav-link w-full py-1.5 px-2 active"
+                                            type="button"
+                                             data-tab-target=""
+         data-tw-toggle="pill" data-tw-target="#cap" type="button" role="tab" aria-controls="cap" aria-selected="true"
+                                                >
+                                                Capacité </button>
+                                        </li>
+                                        <li  class="nav-item flex-1" role="presentation">
+                                            <button class="nav-link w-full py-1.5 px-2"
+                                                 type="button"
+                                                  data-tw-toggle="pill" data-tw-target="#cost" type="button" role="tab" aria-controls="cost" aria-selected="false"> Coûts </button>
+                                        </li>
+                                        <li  class="nav-item flex-1" role="presentation">
+                                            <button class="nav-link w-full py-1.5 px-2"
+                                                type="button"
+                                                  data-tw-toggle="pill" data-tw-target="#results" type="button" role="tab" aria-controls="results" aria-selected="false"> Résultats </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content" >
+                                    <div id="cap" class="tab-pane active" role="tabpanel"
+                                    aria-labelledby="cap" >
+                                        <ul>
+                                            <li class="mb-3">
+                                                <div class="text-slat-500">Energie consommée</div>
+                                                <div class="text-lg">234 <span class="text-sm text-slate-500">MWh/an</span>
+                                                </div>
 
-                                    </li>
-                                    <li class="mb-3">
-                                        <div class="text-slat-500">Capacité Batterie
-                                        </div>
-                                        <div class="text-lg">234</div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="text-slat-500">Capacité PV
+                                                </div>
+                                                <div class="text-lg">55%</div>
 
-                                    </li>
-                                    <li class="mb-3">
-                                        <div class="text-slat-500">Coût d'investissement Total
+                                            </li>
+                                            <li class="mb-3">
+                                                <p class="text-slat-500">Capacité Batterie
+                                                </p>
+                                                <p class="text-lg">234</p>
 
-                                        </div>
-                                        <div class="text-lg">234</div>
+                                            </li>
 
-                                    </li>
-                                    <li class="mb-3">
-                                        <div class="text-slat-500">Coût d'investissement PV
+                                        </ul>
+                                    </div>
+                                    <div id="cost" class="tab-pane" role="tabpanel"
+                                    aria-labelledby="cost" >
+                                        <ul>
+                                            <li class="mb-3">
+                                                <p class="text-slat-500">Coût d'investissement Total
+                                                </p>
+                                                <p class="text-lg">234</p>
 
-                                        </div>
-                                        <div class="text-lg">234</div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <p class="text-slat-500">Coût d'investissement PV
+                                                </p>
+                                                <p class="text-slat-600">Total: <span class="text-lg">324</span>
+                                                </p>
+                                                <p class="text-slat-600">PV: <span class="text-lg">324</span>
+                                                </p>
+                                                <p class="text-slat-600">PV unitaire: <span class="text-lg">324</span>
+                                                </p>
+                                            </li>
 
-                                    </li>
-                                    <li class="mb-3">
-                                        <div class="text-slat-500">Coût d'investissement PV unitaire
+                                            <li class="mb-3">
+                                                <div class="text-slat-500">Résultat Coût moyenné de l'électricité
+                                                </div>
+                                                <div class="text-lg">234</div>
 
+                                            </li>
 
-                                        </div>
-                                        <div class="text-lg">234</div>
+                                        </ul>
+                                    </div>
+                                    <div id="results" class="tab-pane" role="tabpanel"
+                                    aria-labelledby="results">
+                                        <ul>
+                                            <li class="mb-3">
+                                                <p class="text-slat-500">Coût d'investissement Total
+                                                </p>
+                                                <p class="text-lg">234</p>
 
-                                    </li>
-                                    <li class="mb-3">
-                                        <div class="text-slat-500">Résultat Coût moyenné de l'électricité
-                                        </div>
-                                        <div class="text-lg">234</div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <p class="text-slat-500">Coût d'investissement PV
+                                                </p>
+                                                <p class="text-slat-600">Total: <span class="text-lg">324</span>
+                                                </p>
+                                                <p class="text-slat-600">PV: <span class="text-lg">324</span>
+                                                </p>
+                                                <p class="text-slat-600">PV unitaire: <span class="text-lg">324</span>
+                                                </p>
+                                            </li>
 
-                                    </li>
-                                    <li class="mb-3">
-                                        <div class="text-slat-500">Résultat Coût moyenné de l'électricité PV
-                                        </div>
-                                        <div class="text-lg">234</div>
+                                            <li class="mb-3">
+                                                <div class="text-slat-500">Résultat Coût moyenné de l'électricité
+                                                </div>
+                                                <div class="text-lg">234</div>
 
-                                    </li>
-                                    <li class="mb-3">
-                                        <div class="text-slat-500">Résultat Temps de retour sur Investissement
+                                            </li>
 
-                                        </div>
-                                        <div class="text-lg">234</div>
-
-                                    </li>
-                                    <li class="mb-3">
-                                        <div class="text-slat-500">Résultat Rentabilité
-                                        </div>
-                                        <div class="text-lg">234</div>
-                                    </li>
-                                </ul>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1338,7 +1370,7 @@ License: You must have a valid license purchased only from themeforest(the above
         src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=
         AIzaSyCAlHqhV2fJtxu0NkEOrPTdT76qpW6OA-w&libraries=places"></script>
-    <script src="dist/js/app.js"></script>
+    <script src="./dist/js/app.js"></script>
     <!-- END: JS Assets-->
 </body>
 
