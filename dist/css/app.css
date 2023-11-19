@@ -16431,7 +16431,7 @@ a.side-menu--active {
 .top-bar-boxed .hero-section__input {
   width: 713px;
   height: 55px;
-  transform: translateY(-20px);
+  transform: translate(85px, -20px);
   display: none;
 }
 
@@ -16958,6 +16958,8 @@ a.side-menu--active {
 .report-maps {
   height: 310px;
 }
+
+
 
 .pos-dropdown .pos-dropdown__dropdown-menu {
   width: 265px;
@@ -20860,4 +20862,19 @@ a.side-menu--active {
 
 .project-card .project-card__header .battery .battery__box {
   gap: 0.137rem;
+}
+
+.top-20 {
+  top: 200px;
+}
+
+.home #map-box.scrolled {
+  position: fixed;
+  top: 100px;
+  height: calc(100vh - 110px);
+  width: calc(50% - 1.5rem);
+}
+
+.home #map-box.scrolled .report-maps {
+  height: calc(100% - 3.8rem);
 }
