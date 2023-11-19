@@ -16428,6 +16428,13 @@ a.side-menu--active {
   stroke-width: 1.5;
 }
 
+.top-bar-boxed .hero-section__input {
+  width: 713px;
+  height: 55px;
+  transform: translateY(-20px);
+  display: none;
+}
+
 .top-bar-boxed .top-bar__select .tom-select .items {
   background-color: transparent;
   color: white;
@@ -19988,12 +19995,17 @@ a.side-menu--active {
     padding-right: 2.5rem;
   }
 
+
   .md\:pl-0 {
     padding-left: 0px;
   }
 
   .md\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .md\:pt-9 {
+    padding-top: 1.5rem;
   }
 
   .dark .dark\:md\:from-darkmode-700 {
