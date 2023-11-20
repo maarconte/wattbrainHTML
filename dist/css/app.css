@@ -20866,12 +20866,9 @@ a.side-menu--active {
   align-self: stretch;
 }
 
+
+.hero-section__input input:focus,
 .hero-section__input input {
-  border: none;
-
-}
-
-.hero-section__input input:focus {
   border: none;
   outline: none;
   box-shadow: none;
