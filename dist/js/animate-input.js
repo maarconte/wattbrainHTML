@@ -19,4 +19,10 @@ document.addEventListener("DOMContentLoaded",function () {
 		};
 	}
 
+	const buttons = document.getElementsByClassName('btn-rounded');
+	console.log(buttons)
+	buttons.forEach(button => {
+		button.querySelector('.label').classList.add('animate__animated', 'animate__fadeInUp');
+	});
+
 });
