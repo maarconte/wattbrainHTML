@@ -12581,7 +12581,7 @@ html body {
   background-color: rgb(var(--color-darkmode-700) / var(--tw-bg-opacity));
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 1280px) {
   .content {
     margin-left: 105px;
   }
@@ -12595,12 +12595,12 @@ html body {
 
 @media (max-width: calc(768px - 1px)) {
   .content {
-    border-radius: 30px;
-    margin-top: 2.5rem;
+    border-radius: 15px;
+    margin-top: 1rem;
     max-width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
   }
 }
 
@@ -20807,6 +20807,13 @@ a.side-menu--active {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .hero-section img {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+
 .hero-section__content {
   display: flex;
   padding: 2rem 1.5rem;
@@ -20815,6 +20822,13 @@ a.side-menu--active {
   align-items: center;
   gap: 1.5rem;
   flex: 1 0 0;
+}
+
+@media (max-width: 767px) {
+  .hero-section__content {
+    padding: 0;
+    gap: .5rem;
+  }
 }
 
 .hero-section__input {
