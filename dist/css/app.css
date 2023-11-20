@@ -16439,7 +16439,7 @@ a.side-menu--active {
 .top-bar-boxed .hero-section__input {
   width: 713px;
   height: 55px;
-  transform: translateY(-20px);
+  transform: translateY(-16px);
   display: none;
 }
 
@@ -20891,7 +20891,7 @@ a.side-menu--active {
 
 .project-card .project-card__header .battery__head {
   height: 1rem;
-  width: 5px;
+  width: 3px;
 }
 
 .project-card .project-card__header .battery__bar {
