@@ -813,7 +813,10 @@ License: You must have a valid license purchased only from themeforest(the above
                     </li>
                     <li class="side-menu__list">
                         <a href="Reseau.html" class="side-menu flex px-3">
-                            <div class="side-menu__icon"> <i data-lucide="share-2"></i> </div>
+                            <div class="side-menu__icon">
+
+                                <img src="./dist/images/reseau_dark.svg"></img>
+                            </div>
                             <div class="side-menu__title">
                                 Réseau
                             </div>
@@ -822,50 +825,54 @@ License: You must have a valid license purchased only from themeforest(the above
                     </li>
                     <li class="side-menu__list">
                         <a href="photovoltaique.html" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="sun"></i> </div>
+                            <div class="side-menu__icon">
+                                <img src="dist/images/photovolt_dark.svg" alt="Panneau photovoltaïque">
+                            </div>
                             <div class="side-menu__title">
                                 Photovoltaique
-                                <div class="side-menu__sub-icon "></div>
+
                             </div>
                         </a>
 
                     </li>
-                    <li>
+                    <li class="side-menu__list">
                         <a href="stockage.html" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="battery"></i> </div>
+                            <div class="side-menu__icon"> <i data-lucide="battery-full"></i> </div>
                             <div class="side-menu__title">
                                 Stockage
-                                <div class="side-menu__sub-icon "></div>
+
                             </div>
                         </a>
 
                     </li>
-                    <li>
+                    <li class="side-menu__list">
                         <a href="generateur.html" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="zap"></i> </div>
+                            <div class="side-menu__icon">
+                                <img src="dist/images/generateur_dark.svg" alt="Générateur">
+                            </div>
                             <div class="side-menu__title">
                                 Générateur
-                                <div class="side-menu__sub-icon "></div>
+
                             </div>
                         </a>
 
                     </li>
-                    <li>
+                    <li class="side-menu__list">
                         <a href="dimensitonnement" class="side-menu">
-                            <div class="side-menu__icon"> <i data-lucide="box"></i> </div>
+                            <div class="side-menu__icon"> <i data-lucide="pencil-ruler"></i> </div>
                             <div class="side-menu__title">
                                 Dimensionnement
-                                <div class="side-menu__sub-icon "></div>
+
                             </div>
                         </a>
 
                     </li>
-                    <li class="xl:hidden">
+                    <li class="xl:hidden side-menu__list">
                         <a href="resultats.html" class="side-menu">
                             <div class="side-menu__icon"> <i data-lucide="file-text"></i> </div>
                             <div class="side-menu__title">
                                 Résultats
-                                <div class="side-menu__sub-icon "></div>
+
                             </div>
                         </a>
                     </li>
@@ -1359,6 +1366,14 @@ License: You must have a valid license purchased only from themeforest(the above
     </div>
 
     <!-- BEGIN: JS Assets-->
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
     <script
         src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=

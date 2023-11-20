@@ -16093,6 +16093,10 @@ a.side-menu--active {
   display: block;
 }
 
+.side-nav .side-menu__icon {
+  width: 32px;
+}
+
 .side-nav>ul ul .side-menu__icon:before {
   display: none;
 }
