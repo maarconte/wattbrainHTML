@@ -19871,6 +19871,10 @@ a.side-menu--active {
 }
 
 @media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:fixed {
     position: fixed;
   }
