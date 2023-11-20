@@ -16431,9 +16431,10 @@ a.side-menu--active {
 .top-bar-boxed .hero-section__input {
   width: 713px;
   height: 55px;
-  transform: translate(85px, -20px);
+  transform: translateY(-20px);
   display: none;
 }
+
 
 .top-bar-boxed .top-bar__select .tom-select .items {
   background-color: transparent;
@@ -20793,6 +20794,13 @@ a.side-menu--active {
 .home .content {
   margin-left: inherit;
 }
+
+@media (min-width: 768px) {
+  .home .top-bar-boxed {
+    background: white;
+  }
+}
+
 
 .hero-section {
   display: flex;
