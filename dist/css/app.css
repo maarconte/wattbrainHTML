@@ -16101,6 +16101,15 @@ a.side-menu--active {
 
 .side-nav .side-menu__icon {
   width: 32px;
+  height: 32px;
+  flex: none;
+  display: grid;
+  place-items: center;
+}
+
+..side-nav .side-menu__icon svg {
+  width: 32px;
+  height: 32px;
 }
 
 .side-nav>ul ul .side-menu__icon:before {
