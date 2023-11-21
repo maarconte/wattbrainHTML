@@ -12581,7 +12581,7 @@ html body {
   background-color: rgb(var(--color-darkmode-700) / var(--tw-bg-opacity));
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .content {
     margin-left: 105px;
   }
@@ -13930,11 +13930,11 @@ html body {
 .side-nav {
   width: 300px;
   z-index: 50;
-  margin-top: -1rem;
+
   overflow-x: hidden;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  padding-bottom: 0;
+  padding-bottom: 1.25rem;
   padding-top: 7rem;
   display: flex;
   flex-direction: column;
@@ -13960,6 +13960,12 @@ html body {
 .battery {
   width: 100%;
   height: 73px;
+}
+
+@media (max-width: 768px) {
+  .side-nav .battery {
+    display: none;
+  }
 }
 
 .battery__box {
@@ -19921,6 +19927,10 @@ a.side-menu--active {
     grid-column: span 3 / span 3;
   }
 
+  .md\:col-span-12 {
+    grid-column: span 12 / span 12;
+  }
+
   .md\:row-start-auto {
     grid-row-start: auto;
   }
@@ -20331,6 +20341,14 @@ a.side-menu--active {
 
   .xl\:col-span-4 {
     grid-column: span 4 / span 4;
+  }
+
+  .xl\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .xl\:col-span-7 {
+    grid-column: span 7 / span 7;
   }
 
   .xl\:col-span-8 {
@@ -20807,6 +20825,10 @@ a.side-menu--active {
   }
 }
 
+.xl\:gap-3 {
+  gap: 0.75rem;
+}
+
 .home .content {
   margin-left: inherit;
 }
@@ -20916,4 +20938,161 @@ a.side-menu--active {
 
 .home #map-box.scrolled .report-maps {
   height: calc(100% - 3.8rem);
+}
+
+.checkbox {
+  margin-bottom: .5rem;
+}
+
+.checkbox-input {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+  &:checked+.checkbox-tile {
+    border-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+    box-shadow: 0 5px 10px rgba(#000, 0.1);
+    color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+
+    &:before {
+      transform: scale(1);
+      opacity: 1;
+      background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+      border-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+    }
+
+    .checkbox-icon,
+    .checkbox-label {
+      color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+    }
+  }
+
+  &:focus+.checkbox-tile {
+    border-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+    box-shadow: 0 5px 10px rgba(#000, 0.1), 0 0 0 4px #b5c9fc;
+
+    &:before {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.checkbox-tile,
+.radio-tile {
+  display: flex;
+  align-items: center;
+  padding: .5rem .5rem .5rem 2rem;
+  gap: .5rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(var(--color-slate-200) / var(--tw-bg-opacity));
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(#000, 0.1);
+  transition: 0.15s ease;
+  cursor: pointer;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid rgb(var(--color-slate-200) / var(--tw-bg-opacity));
+    background-color: #fff;
+    border-radius: 50%;
+    left: .5rem;
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.25s ease;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='%23FFFFFF' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cpolyline points='216 72.005 104 184 48 128.005' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'%3E%3C/polyline%3E%3C/svg%3E");
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &:hover {
+    border-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+
+    &:before {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.checkbox-icon,
+.radio-icon {
+  transition: .375s ease;
+  color: #494949;
+
+  svg {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.checkbox-label,
+.radio-label {
+  color: #707070;
+  transition: .375s ease;
+  text-align: center;
+}
+
+.radio-input {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.radio-input:checked+.radio-tile {
+  border-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+
+  &:before {
+    transform: scale(1);
+    opacity: 1;
+    background-color: #fff;
+    border-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+    border-width: .35rem;
+  }
+
+  .radio-icon,
+  .radio-label {
+    color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+  }
+}
+
+.radio-input:focus+.radio-tile {
+  border-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
+
+  &:before {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.radio-tile {
+
+  /* ... all the same styles as .checkbox-tile ... */
+  &:before {
+    /* ... all the same styles as .checkbox-tile:before ... */
+    border-radius: 50%;
+    /* This is to ensure the radio button has a round appearance */
+    background-image: none;
+    /* Remove the checkmark background image for radio buttons */
+  }
 }
